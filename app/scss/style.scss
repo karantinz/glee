@@ -9,18 +9,20 @@
         display: flex;  
         justify-content: space-between;
         align-items: center;
-        padding: 50px 70px;
+        padding: 50px 65px;
         font-size: 15px;
     }
 }
 
 .menu {
+    margin-left: 156px;
+
     &__list {
         display: flex;
     }
 
     &__item + .menu__item {
-        padding-left: 30px;
+        padding-left: 40px;
     }
 
     &__link {
@@ -30,82 +32,81 @@
 
 .user-nav {
     display: flex;
-    height: initial;
+
     // лупа 
+
     &__link--loupe {
-        margin-right: 40px;
+        margin-right: 22px;
         background-color: #edf1f4;
         border-radius: 50%;
         width: 50px;
         height: 50px;
         padding: 17px;
     }
-    // конец лупе
+
     // кнопка
-    &__item--btn {
+
+    &__item {
         display: flex;
         background-color: #fcd7b6;
         border-radius: 25px;
         position: relative;
-    }
-
-    &__btn {
         padding: 21px 0 12px;
     }
-
-    &__link--heart {
-        padding-left: 40px;
-        padding-right: 30px;
-        position: relative;
-    }
-
-    &__link--heart::after {
+    
+    &__item::after {
         content: "|";
         position: absolute;
         font-size: 32px;
         color: #fde7d3;
-        right: 0;
+        right: 82px;
         top: 5px;
     }
 
+    &__link--heart {
+        padding-left: 46px;
+        padding-right: 30px;
+    }
+
     &__link--cart {
-        padding-right: 40px;
+        padding-right: 45px;
         padding-left: 25px;
     }
+
     // цифры
+
     &__num {
         position: absolute;
         background-color: #fff;
         border-radius: 50%;
+        top: 14px;
         width: 15px;
         height: 15px;
         text-align: center;
-        @extend %dmsansregular-400;
         font-size: 10px;
         line-height: 16px;
         color: #000;
+        @extend %dmsansregular-400;
     }
 
     &__num--heart {
-        top: 14px;
-        left: 50px;
+        left: 56px;
     }
 
     &__num--cart {
-        top: 14px;
-        right: 32px;
+        right: 36px;
     }
-    // конец кнопке
+
     // точки
+
     &__link--menu {
-        margin-left: 30px;
+        margin-left: 18px;
         background-color: #a3bbc8;
         border-radius: 50%;
         width: 50px;
         height: 50px;
         padding: 15px;
     }
-    // конец точек
 }
 
 
