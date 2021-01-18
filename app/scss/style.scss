@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -180,6 +181,7 @@
         display: flex;
         justify-content: space-evenly;
         height: 172px;
+        margin-top: -10px;
     }
 
     &__bottom--support {
@@ -250,6 +252,14 @@
     &__bottom-item span {
         display: block;
     }
+
+    &__button {
+        @extend %btn;
+    }
+}
+
+.footer {
+    @extend %rubikregular-400;
 }
 
 .footer-top {
@@ -327,6 +337,10 @@
             width: 145px;
             margin-right: 200px;
         }
+    }
+
+    &__button {
+        @extend %btn-2;
     }
 }
 
