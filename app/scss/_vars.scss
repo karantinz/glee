@@ -17,3 +17,68 @@
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
 }
+
+
+%btn {
+    display: flex;
+    padding: 24px 105px 24px 25px;
+    max-width: max-content;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    line-height: 0.8;
+    outline: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .slider__button-img {
+        position: absolute;
+        right: 20px;
+    }
+
+    &:hover {
+        color: #3498db;
+    }
+    
+    &:hover::after {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(1, 1);
+    }
+    
+    &::after {
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        content: "";
+        background-color: #ecf0f1;
+        position: absolute;
+        z-index: -1;
+        display: block;
+        transition: all 0.35s;
+    }
+}
+
+%btn-2 {
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    outline: transparent;
+    padding: 9px 22px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 30px rgba(30,163,235,0.5);  
+    }
+
+    &:active {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+}
