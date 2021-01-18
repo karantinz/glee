@@ -1,12 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Glee | Home</title>
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Pages +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="user-nav">
+                    <a class="user-nav__link--loupe" href="#">
+                        <img class="user-nav__img" src="images/loupe.svg" alt="loupe button">
+                    </a>
+                    <div class="user-nav__item">
+                        <a class="user-nav__link--heart " href="#">
+                            <img class="user-nav__img" src="images/heart.svg" alt="heart button">
+                            <span class="user-nav__num user-nav__num--heart">0</span>
+                        </a>
+                        <a class="user-nav__link--cart" href="#">
+                            <img class="user-nav__img" src="images/cart.svg" alt="cart button">
+                            <span class="user-nav__num user-nav__num--cart">0</span>
+                        </a>
+                    </div>
+                    <a class="user-nav__link--menu" href="#">
+                        <img class="user-nav__img" src="images/menu.svg" alt="menu button">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__box" style="background-image: url(images/slider-bg.jpg);">
+                        <div class="slider__item">
+                            <h1 class="slider__title">
+                                smart and trendy
+                            </h1>
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
+                            <a class="slider__button" href="#">
+                                Shop Now
+                                <svg class="slider__button-img" xmlns="http://www.w3.org/2000/svg" width="22" height="9"
+                                    viewBox="0 0 22 9">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="cls-1"
+                                        d="M535.3,654.472h16.948l-0.1,2.857a0.292,0.292,0,0,0,0,.41l0.172,0.172a0.28,0.28,0,0,0,.2.086,0.285,0.285,0,0,0,.2-0.084l4.193-4.211A0.292,0.292,0,0,0,557,653.5a0.283,0.283,0,0,0-.084-0.2l-4.193-4.213a0.289,0.289,0,0,0-.407,0l-0.172.173a0.287,0.287,0,0,0-.084.2,0.278,0.278,0,0,0,.084.2l0.113,2.865H535.292a0.3,0.3,0,0,0-.292.295v1.37A0.292,0.292,0,0,0,535.3,654.472Z"
+                                        transform="translate(-535 -649)" />
+                                </svg>
+                                <img src="images/right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__box" style="background-image: url(images/slider-bg.jpg);">
+                        <div class="slider__item">
+                            <h2 class="slider__title">
+                                smart and trendy
+                            </h2>
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
+                            <a class="slider__button" href="#">
+                                Shop Now
+                                <img class="slider__button-img" src="images/right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="slider__box" style="background-image: url(images/slider-bg.jpg);">
+                        <div class="slider__item">
+                            <h1 class="slider__title">
+                                smart and trendy
+                            </h1>
+                            <p>
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
+                            <a class="slider__button" href="#">
+                                Shop Now
+                                <img class="slider__button-img" src="images/right.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__bottom">
+                    <div class="slider__bottom-item slider__bottom--support">
+                        <h3 class="slider__bottom-title">Support 24/7.</h3>
+                        <p>Contact us 24 hours a day,
+                            <span>7 days a week.</span>
+                        </p>
+                    </div>
+                    <div class="slider__bottom-item slider__bottom--delivery">
+                        <h3 class="slider__bottom-title">Delivery.</h3>
+                        <p>Free shipping on all US order.
+                        </p>
+                    </div>
+                    <div class="slider__bottom-item slider__bottom--secure">
+                        <h3 class="slider__bottom-title">100% Payment secure.</h3>
+                        <p>We ensure secure payment
+                            <span>with PEV.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container-2">
+            <div class="footer-top">
+                <div class="footer-top__box footer-top__box--contact">
+                    <a class="footer-top__logo" href="#">
+                        <img class="footer-top__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="footer-top__address" href="#">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </a>
+                    <a class="footer-top__tel" href="tel:+8323475843">
+                        Telephone: +832-347-5843
+                    </a>
+                    <a class="footer-top__mail" href="#">
+                        Email: contact@Glee.com
+                    </a>
+                </div>
+                <div class="footer-top__box footer-top__box--services">
+                    <h6 class="footer-top__title">Services</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">About us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Return Policy</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Our Blog</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__box footer-top__box--account">
+                    <h6 class="footer-top__title">Account</h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Your Account</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Checkout</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Login</a>
+                        </li>
+                        <li class="footer-top__item">
+                            <a class="footer-top__link" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__box">
+                    <h6 class="footer-top__title">newsletter</h6>
+                    <div class="footer-top__text">
+                        <p>
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                    </div>
+                    <form class="footer-top__form" action="#">
+                        <input class="footer-top__input" type="email" placeholder="Email address" required>
+                        <button class="button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>©2020 CopyRight Example. All rights reserved.</p>
+                <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
