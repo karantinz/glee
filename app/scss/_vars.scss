@@ -13,6 +13,11 @@
     font-weight: 400;
 }
 
+%dmsansmedium-500{
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
 %dmsansbold-700{
     font-family: 'DMSans-Bold', sans-serif;
     font-weight: 700;
@@ -35,6 +40,11 @@
     .slider__button-img {
         position: absolute;
         right: 20px;
+        fill: #fff;
+    }
+
+    &:hover .slider__button-img {
+        fill: #3498db;
     }
 
     &:hover {
