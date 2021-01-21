@@ -37,13 +37,13 @@
     z-index: 1;
     overflow: hidden;
 
-    .slider__button-img {
+    .button-img {
         position: absolute;
         right: 20px;
         fill: #fff;
     }
 
-    &:hover .slider__button-img {
+    &:hover .button-img {
         fill: #3498db;
     }
 

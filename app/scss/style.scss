@@ -479,8 +479,80 @@
         background-color: #a3bbc8;
         fill: #fff;
     }
-    
 }
+
+.lamp {
+    margin-top: 180px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__box {
+        display: flex;
+        width: 870px;
+        height: 390px;
+        margin-right: 30px;
+        background-color: #feefe2;
+        position: relative;
+    }
+
+    &__img-left {
+        position: absolute;
+        top: -93px;
+        left: 104px;
+    }
+
+    &__img-right {
+        position: absolute;
+        top: -93px;
+        left: 158px;
+    }
+
+    &__text--left {
+        position: absolute;
+        width: 58%;
+        height: 74%;
+        right: 0;
+        bottom: 0;
+    }
+    
+    &__text--right {
+        position: absolute;
+        width: 48%;
+        height: 78%;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__title {
+        max-width: 260px;
+        font-size: 26px;
+        line-height: 1.23;
+        padding-bottom: 14px;
+        @extend %dmsansbold-700;
+    }
+
+    &__text p {
+        max-width: 328px;
+        padding-bottom: 36px;
+        @extend %rubikregular-400;
+    }
+
+    &__btn {
+        @extend %btn;
+        background-color: transparent;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        color: #436372;
+
+        .button-img {
+            fill: #436372;
+        }
+    }
+
+}
+
 
 .footer {
     @extend %rubikregular-400;
