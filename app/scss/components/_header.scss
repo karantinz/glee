@@ -1,0 +1,187 @@
+.header {
+    &__inner {
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        padding: 44px 0;
+        font-size: 15px;
+    }
+}
+
+.logo {
+    margin-right: 159px;
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        color: $pale-blue;
+        padding-bottom: 10px;
+        outline: transparent;
+        position: relative;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:active {
+            color: $active;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0%;
+            content: '';
+            background-color: rgb(226, 11, 11);
+            height: 1px;
+            transition: width 0.5s;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    // поиск 
+
+    &__link-search {
+        margin-right: 22px;
+        background-color: #edf1f4;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        padding: 13px;
+        transition: transform 0.5s;
+        fill: $color-title;
+        outline: transparent;
+        transition: background-color 0.2s;
+            
+        &:hover {
+            border: 1px solid $active;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $active;
+            fill: #fff;
+        }
+    }
+
+    // кнопка
+
+    &__box {
+        display: flex;
+        background-color: #fcd7b6;
+        border-radius: 25px;
+        position: relative;
+        margin-right: 18px;
+    }
+
+    &__item {
+        padding-top: 18px;
+        padding-bottom: 6px;
+        transition: fill 0.3s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            border-right: 1px solid #fde7d3;
+            height: 32px;
+            top: 11px;
+            left: 90px;
+        }
+    }
+
+    &__link-heart {
+        padding-left: 39px;
+        padding-right: 30px;
+        fill: $color-title;
+        outline: transparent;
+
+        &:active,
+        &:focus,
+        &:hover {
+            fill: rgb(192, 6, 6);
+        }
+    }
+
+    &__link-cart {
+        padding-left: 30px;
+        padding-right: 39px;
+        fill: $color-title;
+        outline: transparent;
+
+        &:active,
+        &:focus,
+        &:hover {
+            fill: rgb(3, 3, 240);
+        }
+    }
+
+    // цифры
+
+    &__num {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 14px;
+        width: 15px;
+        height: 15px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 16px;
+        color: #000;
+        @extend %dmsansregular-400;
+
+        &--heart {
+            left: 51px;
+        }
+    
+        &--cart {
+            right: 34px;
+        }
+    }
+
+    // меню
+
+    &__link-menu {
+        background-color: $blue;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 14px;
+        text-align: center;
+        transition: transform 0.5s, background-color 0.2s;
+        fill: #fff;
+        outline: transparent;
+
+        &:hover {
+            border: 1px solid $active;
+        }
+
+        &:active,
+        &:focus {
+            background-color: $active;
+        }
+    }
+}
