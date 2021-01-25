@@ -1,0 +1,132 @@
+.news {
+    &__wrapper {
+        height: 351px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @extend %dmsansbold-700;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: 36px;
+    }
+
+    &__link {
+        padding-right: 37px;
+        position: relative;
+        color: #000;
+        outline: transparent;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $btn-blue;  
+            fill: $btn-blue; 
+        }
+
+        &:focus {
+            color: $focus;
+            fill: $focus;
+        }
+
+        &:active {
+            color: $active; 
+            fill: $active;
+        }
+
+        svg {
+            position: absolute;
+            right: 14px;
+            bottom: 8px;
+            transition: fill 0.3s;   
+        }        
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__box {
+        margin-right: 30px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        background-color: $blue;
+        border-radius: 20px;
+        padding: 3px 30px;
+        top: 229px;
+        left: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        @extend %poppins-700;
+        outline: transparent;
+        transition: box-shadow 0.3s, color 0.3s;
+
+        &:focus,
+        &:hover {
+            box-shadow: 0px 0px 0px 10px rgba(247, 247, 247, 0.5);
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__text {
+        max-width: 369px;
+        font-size: 18px;
+        line-height: 1.2;
+        @extend %dmsansmedium-500;
+        color: #262626;
+        padding: 32px 27px 21px 5px;
+        margin: 0 27px 0 28px;
+    }
+
+    &__bottom {
+        margin-left: 17px;
+        margin-right: 38px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #000;
+        @extend %rubikregular-400;
+
+        &-text {
+            margin-top: auto;
+            padding-top: 6px;
+            padding-bottom: 19px; 
+            margin-left: 28px;
+            margin-right: 27px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        &-link {
+            text-transform: uppercase;
+            color: #000;
+            font-size: 12px;
+            @extend %rubikregular-400;
+            outline-color: transparent;
+
+            &:hover {
+                color: $active;
+            }
+
+            &:focus,
+            &:active {
+                color: $focus;
+            }
+        }
+    }
+}

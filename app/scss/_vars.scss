@@ -1,54 +1,92 @@
+$btn-blue: #3498db;
+$active: #004d80;
+$focus: rgb(136, 0, 0);
+$grey: #7b7b7b;
+$pale-pink: #fef7f0;
+$blue: #a3bbc8;
+$pale-blue: #436372;
+$color-title: #243f4d;
+
+
 %rubikregular-400{
-    font-family: 'Rubik-Regular', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
 
 %rubikmedium-500{
-    font-family: 'Rubik-Medium', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
 
 %dmsansregular-400{
-    font-family: 'DMSans-Regular', sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-weight: 400;
 }
 
 %dmsansmedium-500{
-    font-family: 'DMSans-Medium', sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-weight: 500;
 }
 
 %dmsansbold-700{
-    font-family: 'DMSans-Bold', sans-serif;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+}
+
+%poppins-700{
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
 
 %btn {
     display: flex;
-    padding: 24px 105px 24px 25px;
+    padding: 17px 105px 17px 25px;
     max-width: max-content;
     background-color: #a3bbc8;
     color: #fff;
     font-size: 15px;
-    line-height: 0.8;
     outline: transparent;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transition: background-color 0.5s;
 
-    .button-img {
+    svg {
         position: absolute;
+        top: 26px;
         right: 20px;
         fill: #fff;
     }
 
-    &:hover .button-img {
-        fill: #3498db;
+    // svg
+    &:hover path {
+        fill: $btn-blue;
+    }
+    
+    &:focus path {
+        fill: $active;
     }
 
+    &:active path {
+        fill: $active;
+    }
+
+    // btn
     &:hover {
-        color: #3498db;
+        color: $btn-blue;
+    }
+    
+    &:focus {
+        background-color: $focus;
+    }
+
+    &:active {
+        color: $active;
+    }
+
+    &:active {
+        background-color: $active;
     }
     
     &:hover::after {
@@ -79,7 +117,7 @@
     background-color: #a3bbc8;
     color: #fff;
     outline: transparent;
-    padding: 9px 22px;
+    padding: 8px 18px;
     cursor: pointer;
     transition: box-shadow 0.3s;
 
@@ -91,4 +129,16 @@
         transform: translateY(-2px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
+
+    &:focus {
+        background-color: $focus;
+    }
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
 }

@@ -1,0 +1,115 @@
+.footer {
+    @extend %rubikregular-400;
+
+    &__inner {
+        padding: 71px 0 48px;
+        border-bottom: 1px solid #dae4e9;
+        display: flex;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #1f2044;
+    }
+
+    &__box {
+        margin-right: 36px;
+
+        &--contact {
+            max-width: 215px;
+            margin-right: 83px;
+        }
+
+        &--services {
+            width: 217px;
+            margin-right: 148px;
+        }
+
+        &--account {
+            width: 145px;
+            margin-right: 193px;
+        }
+    }
+
+    &__link {
+        color: $grey;
+        margin-bottom: 10px;
+        font-style: normal;
+        display: block;
+        outline: transparent;
+
+        &:focus,
+        &:hover {
+            color: #000;
+        }
+   
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 28px;
+        display: block;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+        padding-top: 27px;
+        max-width: 115px;
+        font-size: 16px;
+        line-height: 1.3125px;
+        @extend %dmsansbold-700;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 31px;
+        color: $grey;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 27px 0 39px;
+        font-size: 14px;
+        color: $grey;
+    
+        &-list {
+            display: flex;
+            position: relative;
+        }
+    
+        &-item {
+            & + & {
+                padding-left: 31px;
+            }
+        
+            &::after {
+                content: "|";
+                position: absolute;
+                padding-left: 13px;
+            }
+        
+            &:last-child::after {
+                content: "";
+            }
+        }
+    
+        &-link {
+            color: $grey;
+            outline: transparent;
+
+            &:focus,
+            &:hover {
+                color: #000;
+            }
+
+            &:active {
+                color: $active;
+            }
+        }
+    }
+}

@@ -4,9 +4,20 @@ $(function(){
         dots: true,
     });
 
-    // $('.product__item').on('click', function () {
-    //     $('.product__item').toggleClass('product__item--active');
-    // });
+    $('.partners__inner').slick({
+        arrows: false,
+        dots: true,
+    });
 
-    var mixer = mixitup('.product__content');
+
+    var mixer1 = mixitup('.product__content', {
+        selectors: {
+            control: '.product__item'
+        }
+    });
+    var mixer2 = mixitup('.design__inner', {
+        selectors: {
+            control: '.design__item'
+        }
+    });
 })
