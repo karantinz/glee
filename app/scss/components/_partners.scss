@@ -1,5 +1,6 @@
 .partners {
     padding: 255px 0 88px;
+    margin-bottom: 81px;
     background-color: $pale-pink;
 
     &__item {
@@ -10,39 +11,20 @@
     &__link-logo {
         margin: 0 50px;
     }
+}
 
-    .slick-dots {
-        display: flex;
-        justify-content: center;
-        padding-top: 25px;
-        
-        li + li {
-            padding-left: 20px;
+@media (max-width: 1024px) {
+    .partners {
+        padding: 50px 0;
+
+        &__item {
+            display: block;
         }
 
-        button {
-            background-color: #1f2044;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            font-size: 10px;
-            padding: 0;
-            border: none;
-            cursor: pointer;
-            opacity: 0.3;
-            outline: transparent;
-            transition: opacity 0.4s;
-            font-size: 0;
-        }
-    
-        button:hover,
-        .slick-active button {
-            opacity: 1;
-        }
-    
-        button:active,
-        button:focus {
-            background-color: rgb(190, 3, 3);
+        &__link-logo {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
         }
     }
 }

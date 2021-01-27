@@ -1,7 +1,9 @@
 body {
     @extend %rubikmedium-500;
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.8;
+    background-color: #fff;
+    color: #191919;
 }
 
 .sr-only {
@@ -23,8 +25,6 @@ body {
 
     &--small {
         max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 }
 
@@ -33,99 +33,188 @@ body {
     line-height: 2.3;
     text-align: center;
     @extend %dmsansbold-700;
+    color: #191919;
+
+    @media (max-width: 380px) {
+        font-size: 28px;
+    }
+}
+
+.global__btn {
+    display: flex;
+    padding: 17px 105px 17px 25px;
+    max-width: max-content;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 15px;
+    outline: transparent;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: background-color 0.5s, color 0.5s;
+
+    svg {
+        position: absolute;
+        top: 26px;
+        right: 20px;
+        fill: #fff;
+        transition: fill 0.5s;
+    }
+
+    // svg
+    &:focus svg {
+        fill: $active;
+    }
+
+    &:hover svg {
+        fill: $btn-blue;
+    }
+
+    &:active svg {
+        fill: $active;
+    }
+
+    // btn
+    &:focus {
+        background-color: $focus;
+    }
+
+    &:hover {
+        color: $btn-blue;
+    }
+
+    &:active {
+        color: $active;
+        background-color: $active;
+    }
+     
+    &::after {
+        left: -20%;
+        right: -20%;
+        top: 0;
+        bottom: 0;
+        transform: skewX(-45deg) scale(0, 1);
+        content: "";
+        background-color: #ecf0f1;
+        position: absolute;
+        z-index: -1;
+        display: block;
+        transition: all 0.35s;
+    }
+
+    &:hover::after {
+        left: 0;
+        right: 0;
+        transform: skewX(-45deg) scale(1, 1);
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: 1px solid #b3b7b5;
+        border-radius: 5px;
+        color: $pale-blue;
+        padding-right: 80px;
+
+        &:hover {
+            background-color: #1f2044;
+        }
+
+        svg {
+            fill: $pale-blue;
+        }
+    }
+
+    &--2 {
+        border: none;
+        padding: 8px 18px;
+        cursor: pointer;
+        transition: box-shadow 0.3s, background-color 0.3s;
+
+        &:focus {
+            background-color: $focus;
+        }
+    
+        &:hover {
+            box-shadow: 0 0 30px rgba(30,163,235,0.5);  
+        }
+    }
+}
+
+.goods {
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__item {
+        margin-right: 28px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        color: #8b8b8b;
+        transition: color 0.3s;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        outline: transparent;
+        
+        &:hover {
+            color: #000;
+        }
+        
+        &:focus {
+            color: $focus;
+        }
+        
+        &:active {
+            color: $btn-blue;
+        }
+    }
+
+    @media (max-width: 380px) {
+        &__list {
+            display: block;
+        }
+
+        &__item {
+            margin: 25px 0;
+        }
+    }
 }
 
 .subscribe-form {
     display: flex;
 
     &__input {
-        border: transparent;
+        border: 1px solid transparent;
         outline: transparent;
         background-color: #fef7f0;
         padding: 8px;
         max-width: 174px;
-    }
-    
-    &__input::placeholder { 
-        color: #234969;
-        padding-left: 6px;
-    }
+        transition: background-color 0.3s, border-color 0.3s;
 
-    &__input:active,
-    &__input:focus {
-        background-color: #e2e0df;
-    }
-    
-    &__button {
-        @extend %btn-2;
-    }
-}
-
-.box-icon {
-    position: absolute;
-    display: flex;
-    top: 191px;
-    opacity: 0;
-    transition: opacity 0.7s;
-
-    &__loupe {
-        border-radius: 50%;
-        width: 45px;
-        height: 43px;
-        background-repeat: no-repeat;
-        background-color: #fefefe;
-        padding: 11px;
-        box-shadow: 0px 0px 0px 5px rgba(37, 37, 37, 0.05);
-        transition: background-color 0.5s;
-        fill: $blue;
-        cursor: pointer;
-        outline: transparent;
-    }
-
-    &__cart {
-        border-radius: 50%;
-        width: 45px;
-        height: 43px;
-        padding: 11px;
-        background-repeat: no-repeat;
-        background-color: $blue;
-        margin: 0 15px;
-        box-shadow: 0px 0px 0px 5px rgba(37, 37, 37, 0.05);
-        border: none;
-        cursor: pointer;
-        outline: transparent;
-        transition: background-color 0.3s;
-    }
-
-    &__heart {
-        border-radius: 50%;
-        width: 45px;
-        height: 43px;
-        background-repeat: no-repeat;
-        background-color: #fefefe;
-        padding: 11px;
-        box-shadow: 0px 0px 0px 5px rgba(37, 37, 37, 0.05);
-        transition: background-color 0.3s;
-        fill: $blue;
-        cursor: pointer;
-        outline: transparent;
-        border: transparent;
-    }
-
-    &__icon {
-        &:hover {
-            background-color: $blue;
-            fill: #fff;
+        &::placeholder { 
+            color: #234969;
+            font-size: 12px;
+            padding-left: 6px;
+            @extend %dmsansregular-400;
         }
     
         &:focus {
-            background-color: $btn-blue;
-            fill: #fff;
+            border-color: red;
         }
-    
+
+        &:hover {
+            background-color: #e2e0df
+        }
+
         &:active {
-            background-color: $btn-blue;
-            fill: #fff;
+            background-color: #51b1ff;
         }
     }
 }

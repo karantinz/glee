@@ -1,6 +1,6 @@
 .news {
     &__wrapper {
-        height: 351px;
+        height: 368px;
     }
 
     &__top {
@@ -11,10 +11,6 @@
         margin-bottom: 35px;
     }
 
-    &__title {
-        font-size: 36px;
-    }
-
     &__link {
         padding-right: 37px;
         position: relative;
@@ -22,20 +18,7 @@
         outline: transparent;
         transition: color 0.3s;
 
-        &:hover {
-            color: $btn-blue;  
-            fill: $btn-blue; 
-        }
-
-        &:focus {
-            color: $focus;
-            fill: $focus;
-        }
-
-        &:active {
-            color: $active; 
-            fill: $active;
-        }
+        @extend %effect;
 
         svg {
             position: absolute;
@@ -51,6 +34,7 @@
 
     &__box {
         margin-right: 30px;
+        width: 370px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -59,6 +43,10 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+
+    &__img {
+        height: 250px;
     }
 
     &__btn {
@@ -91,8 +79,7 @@
         line-height: 1.2;
         @extend %dmsansmedium-500;
         color: #262626;
-        padding: 32px 27px 21px 5px;
-        margin: 0 27px 0 28px;
+        padding: 32px 54px 21px 33px;
     }
 
     &__bottom {
@@ -102,31 +89,57 @@
         text-transform: uppercase;
         color: #000;
         @extend %rubikregular-400;
+    }
+    
+    &__bottom-text {
+        margin-top: auto;
+        padding-top: 6px;
+        padding-bottom: 19px; 
+        margin-left: 28px;
+        margin-right: 27px;
+        border-top: 1px solid #e0e0e0;
+    }
+    
+    &__bottom-link {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 12px;
+        @extend %rubikregular-400;
+        outline-color: transparent;
+        
+        @extend %effect;
+    }
+}
 
-        &-text {
-            margin-top: auto;
-            padding-top: 6px;
-            padding-bottom: 19px; 
-            margin-left: 28px;
-            margin-right: 27px;
-            border-top: 1px solid #e0e0e0;
+@media (max-width: 1024px) {
+    .news {
+        &__wrapper {
+            height: auto;
         }
 
-        &-link {
-            text-transform: uppercase;
-            color: #000;
-            font-size: 12px;
-            @extend %rubikregular-400;
-            outline-color: transparent;
+        &__top {
+            display: block;
+        }
 
-            &:hover {
-                color: $active;
-            }
+        &__link svg {
+            bottom: 5px;
+        }
 
-            &:focus,
-            &:active {
-                color: $focus;
-            }
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__box {
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__bottom {
+            margin-right: 20px;
         }
     }
 }

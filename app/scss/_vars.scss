@@ -5,7 +5,8 @@ $grey: #7b7b7b;
 $pale-pink: #fef7f0;
 $blue: #a3bbc8;
 $pale-blue: #436372;
-$color-title: #243f4d;
+$dark-blue: #243f4d;
+$black: #191919;
 
 
 %rubikregular-400{
@@ -38,102 +39,25 @@ $color-title: #243f4d;
     font-weight: 700;
 }
 
+%effect {
+    transition: color 0.3s, fill 0.3s;
 
-%btn {
-    display: flex;
-    padding: 17px 105px 17px 25px;
-    max-width: max-content;
-    background-color: #a3bbc8;
-    color: #fff;
-    font-size: 15px;
-    outline: transparent;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: background-color 0.5s;
-
-    svg {
-        position: absolute;
-        top: 26px;
-        right: 20px;
-        fill: #fff;
-    }
-
-    // svg
-    &:hover path {
-        fill: $btn-blue;
-    }
-    
-    &:focus path {
-        fill: $active;
-    }
-
-    &:active path {
-        fill: $active;
-    }
-
-    // btn
-    &:hover {
-        color: $btn-blue;
-    }
-    
     &:focus {
-        background-color: $focus;
+        color: $focus;
+        fill: $focus;
+    }
+
+    &:hover {
+        color: $btn-blue;  
+        fill: $btn-blue; 
     }
 
     &:active {
-        color: $active;
-    }
-
-    &:active {
-        background-color: $active;
-    }
-    
-    &:hover::after {
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    &::after {
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        content: "";
-        background-color: #ecf0f1;
-        position: absolute;
-        z-index: -1;
-        display: block;
-        transition: all 0.35s;
+        color: $active; 
+        fill: $active;
     }
 }
 
-%btn-2 {
-    border: none;
-    background-color: #a3bbc8;
-    color: #fff;
-    outline: transparent;
-    padding: 8px 18px;
-    cursor: pointer;
-    transition: box-shadow 0.3s;
-
-    &:hover {
-        box-shadow: 0 0 30px rgba(30,163,235,0.5);  
-    }
-
-    &:active {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    &:focus {
-        background-color: $focus;
-    }
-}
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
