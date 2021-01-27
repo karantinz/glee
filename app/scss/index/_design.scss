@@ -1,23 +1,8 @@
 .design {
-    margin-bottom: 120px;
+    margin-bottom: 115px;
 
-    &__item {
-        color: #8b8b8b;
-        transition: color 0.3s;
-        border: none;
-        padding: 0;
-        background-color: transparent;
-        cursor: pointer;
+    &__top {
         margin-bottom: 50px;
-        outline: transparent;
-
-        & + & {
-            margin-left: 28px;
-        }
-        
-        &:hover {
-            color: #000;
-        }
     }
 
     .mixitup-control-active {
@@ -37,7 +22,7 @@
         position: relative;
     }
 
-    &__content-title {
+    &__text {
         display: flex;
         flex-direction: column;
         max-width: 180px;
@@ -46,6 +31,7 @@
         margin-left: -121px;
         margin-top: 37px;
         @extend %dmsansbold-700;
+        color: $black;
         position: absolute;
     }
 
@@ -54,13 +40,12 @@
         color: $blue;
         padding-top: 10px;
     }
+}
 
-    &__list {
-        display: flex;
-        justify-content: center;
-    }
-
-    &__box:hover &__box-icon {
-        opacity: 1;
+@media (max-width: 380px) {
+    .design {
+        &__list {
+            display: block;
+        }
     }
 }
