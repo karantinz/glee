@@ -15,6 +15,18 @@
 .menu {
     &__list {
         display: flex;
+
+        @media (max-width: 1024px) {
+            position: absolute;
+            display: block;
+            background-color: $pale-pink;
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            right: 0;
+            transform: translateY(-200%);
+            transition: transform 0.5s;
+        }
     }
 
     &__item {
@@ -23,12 +35,24 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media (max-width: 1024px) {
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            padding-left: 70px;
+
+            &:first-child {
+                margin-top: 200px;
+            }
+        }
     }
 
     &__link {
         color: $pale-blue;
         padding-bottom: 10px;
-        outline: transparent;
         position: relative;
 
         @extend %effect;
@@ -49,10 +73,67 @@
         &:hover::after {
             width: 100%;
         }
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            width: 100%;
+            height: 55px;
+        }
     }
 
     &__btn {
         display: none;
+
+        @media (max-width: 1024px) {
+            display: block;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            position: relative;
+            z-index: 2;
+            right: 25px;
+
+            & span, 
+            &::before,
+            &::after {
+                position: absolute;
+                top: 24px; 
+                left: 15px; 
+                width: 20px;
+                height: 2px;
+                background-color: #000;
+                content: "";
+                transition: transform 0.5s, opacity 0.4s;       
+            }
+        
+            &::before {
+                transform: translateY(-5px);
+            }
+        
+            &::after {
+                transform: translateY(5px);
+            }
+        
+            &--active span {
+                opacity: 0;
+            }
+            
+            &--active::before{
+                transform: rotate(45deg);
+            }
+        
+            &--active::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__btn--active {
+            transform: translateY(0%);
+        }
     }
 }
 
@@ -100,44 +181,28 @@
         position: relative;
         margin-right: 18px;
     }
-
+     
     &__item {
         padding-top: 18px;
         padding-bottom: 6px;
-        transition: fill 0.3s, background-color 0.3s;
         fill: $dark-blue;
         outline: transparent;
-
-        &:focus {
-            fill: rgb(192, 6, 6);
-        } 
-
-        &:hover {
-            background-color: rgba(245, 241, 241, 0.3);
-            fill: rgb(3, 3, 240);
-        }
-
-        &:active {
-            fill: rgba(4, 8, 235, 0.3)
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            border-right: 1px solid #fde7d3;
-            height: 32px;
-            top: 11px;
-            left: 87px;
-        }
+        position: relative;
 
         &--heart {
             padding-left: 39px;
             padding-right: 30px;
+            border-radius: 20px 0 0 20px;
+            
+            @extend %header-nav-menu;
         }
     
         &--cart {
             padding-left: 30px;
             padding-right: 39px;
+            border-radius: 0 20px 20px 0;
+
+            @extend %header-nav-menu;
         }
     }
 
@@ -162,103 +227,13 @@
             right: 34px;
         }
     }
-}
 
-@media (max-width: 1280px) {
-    .logo {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 1024px) {
-    .menu {
-        &__list {
-            position: absolute;
-            display: block;
-            background-color: $pale-pink;
-            z-index: 1;
-            width: 100%;
-            top: 0;
-            right: 0;
-            transform: translateY(-200%);
-            transition: transform 0.5s;
-        }
-
-        &__btn--active {
-            transform: translateY(0%);
-        }
-        
-        &__item {
-            margin-right: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            padding-left: 70px;
-
-            &:first-child {
-                margin-top: 200px;
-            }
-        }
-
-        &__link {
-            font-size: 24px;
-            width: 100%;
-            height: 55px;
-        }
-
-        &__btn {
-            display: block;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            width: 50px;
-            height: 50px;
-            position: relative;
-            z-index: 2;
-            right: 25px;
-
-            & span, 
-            &::before,
-            &::after {
-                position: absolute;
-                top: 24px; 
-                left: 15px; 
-                width: 20px;
-                height: 2px;
-                background-color: #000;
-                content: "";
-                transition: transform 0.5s, opacity 0.4s;       
-            }
-        
-            &::before {
-                transform: translateY(-5px);
-            }
-        
-            &::after {
-                transform: translateY(5px);
-            }
-        
-            &--active span {
-                opacity: 0;
-            }
-            
-            &--active::before{
-                transform: rotate(45deg);
-            }
-        
-            &--active::after {
-                transform: rotate(-45deg);
-            }
-        }
-    }
-
-    .user-nav {
+    @media (max-width: 1024px) {
         position: absolute;
         z-index: 2;
         transform: translateY(-200%);
         transition: transform 0.5s;
-
+    
         &__btn--active {
             transform: translateY(150%);
             

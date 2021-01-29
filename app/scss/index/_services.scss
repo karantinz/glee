@@ -5,6 +5,10 @@
         background-color: $pale-pink;
         display: flex;
         margin-top: -10px;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
     }
 
     &__box {
@@ -15,12 +19,35 @@
         & + & {
             border-left: 1px solid #e8e4df;
         }
+
+        @media (max-width: 1024px) {
+            width: auto;
+            padding-left: 50px;
+
+            & + & {
+                border-left: none;
+            }
+
+            & {
+                border-bottom: 1px solid #e8e4df;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
+        padding-left: 78px;
+
+        @media (max-width: 1024px) {
+            padding-left: 0;
+            padding-right: 10px;
+        }
     }
 
     &__title {
@@ -29,7 +56,6 @@
         color: #414141;
         @extend %dmsansbold-700;
         position: relative;
-        padding-left: 79px;
 
         &::after {
             content: "";
@@ -37,65 +63,42 @@
             background-repeat: no-repeat;
             width: 55px;
             height: 53px;
+            top: 9px;
+            left: -74px;
+
+            @media (max-width: 1024px) {
+                left: 0;
+            }
         }
 
         &--support {
-            margin-top: -7px;
-    
             &::after {
                 background-image: url("../../images/support.png");
-                top: 9px;
-                left: 0;
             }
         }
 
         &--delivery::after {
             background-image: url("../../images/delivery.png");
-            top: 11px;
-            left: 0;
         }
 
         &--secure {
-            margin-top: -10px;
-    
             &::after {
                 background-image: url("../../images/secure.png");
-                top: 13px;
-                left: 0;
             }
-        }   
+        }  
+        
+        @media (max-width: 1024px) {
+            padding-left: 105px;
+        }
     }
 
     &__text {
         @extend %dmsansregular-400;
         max-width: 300px;
-        padding-left: 78px;
-    }
-}
 
-@media (max-width: 1024px) {
-    .services {
-        &__inner {
-            display: block;
-        }
-
-        &__box {
-            width: auto;
-            padding-left: 50px;
-
-            & + & {
-                border: none;
-            }
-        }
-
-        &__title {
-            padding-left: 105px;
-        }
-
-        &__text {
+        @media (max-width: 1024px) {
             max-width: none;
-            padding-right: 25px;
-            padding-left: 106px;
+            padding-left: 105px;
         }
     }
 }
