@@ -8,23 +8,15 @@
         align-items: center;
     }
 
-    &__link-logo {
+    &__logo {
+        display: flex;
+        align-items: center;
         margin: 0 50px;
+        max-width: 150px;
+        height: 85px;
     }
-}
 
-@media (max-width: 1024px) {
-    .partners {
-        padding: 50px 0;
-
-        &__item {
-            display: block;
-        }
-
-        &__link-logo {
-            display: flex;
-            justify-content: center;
-            margin: 50px 0;
-        }
+    @media (max-width: 1024px) {
+        padding-top: 100px;
     }
 }

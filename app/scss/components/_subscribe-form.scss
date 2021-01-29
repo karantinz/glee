@@ -1,0 +1,31 @@
+.subscribe-form {
+    display: flex;
+
+    &__input {
+        border: 1px solid transparent;
+        outline: transparent;
+        background-color: #fef7f0;
+        padding: 8px;
+        max-width: 174px;
+        transition: background-color 0.3s, border-color 0.3s;
+
+        &::placeholder { 
+            color: #234969;
+            font-size: 12px;
+            padding-left: 6px;
+            @extend %dmsansregular-400;
+        }
+    
+        &:focus {
+            border-color: red;
+        }
+
+        &:hover {
+            background-color: #e2e0df
+        }
+
+        &:active {
+            background-color: #51b1ff;
+        }
+    }
+}
