@@ -45,14 +45,14 @@ $(function(){
     });
 
 
-    var mixer1 = mixitup('.product-content', {
+    var mixer1 = mixitup('.product__inner', {
         selectors: {
-            control: '.goods__btn--product'
+            control: '.product .goods__btn'
         },
     });
     var mixer2 = mixitup('.design__inner', {
         selectors: {
-            control: '.goods__btn--design'
+            control: '.design .goods__btn'
         },
     });
 })

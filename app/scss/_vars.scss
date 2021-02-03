@@ -3,11 +3,16 @@ $active: #004d80;
 $focus: rgb(136, 0, 0);
 $grey: #7b7b7b;
 $pale-pink: #fef7f0;
+$dark-pink: #fcd7b6;
 $blue: #a3bbc8;
 $pale-blue: #436372;
 $dark-blue: #243f4d;
 $black: #191919;
 
+%rubiklight-300{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
 
 %rubikregular-400{
     font-family: 'Rubik', sans-serif;
@@ -17,6 +22,11 @@ $black: #191919;
 %rubikmedium-500{
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+}
+
+%rubikbold-700{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 
 %dmsansregular-400{
@@ -34,6 +44,11 @@ $black: #191919;
     font-weight: 700;
 }
 
+%poppins-600{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
 %poppins-700{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -41,7 +56,11 @@ $black: #191919;
 
 %effect {
     outline: transparent;
-    transition: color 0.3s, fill 0.3s;
+    transition: color 0.3s;
+
+    path {
+        transition: fill 0.3s;
+    }
 
     &:focus {
         color: $focus;

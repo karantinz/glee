@@ -3,6 +3,8 @@
     padding: 17px 105px 17px 25px;
     max-width: max-content;
     background-color: #a3bbc8;
+    border: none;
+    cursor: pointer;
     color: #fff;
     font-size: 15px;
     outline: transparent;
@@ -19,31 +21,35 @@
         transition: fill 0.5s;
     }
 
-    // svg
-    &:focus svg {
-        fill: $active;
-    }
-
-    &:hover svg {
-        fill: $btn-blue;
-    }
-
-    &:active svg {
-        fill: $active;
-    }
-
-    // btn
     &:focus {
         background-color: $focus;
+
+        svg {
+            fill: $active;
+        }
     }
 
     &:hover {
         color: $btn-blue;
+
+        svg {
+            fill: $btn-blue;
+        }
+
+        &::after {
+            left: 0;
+            right: 0;
+            transform: skewX(-45deg) scale(1, 1);
+        }
     }
 
     &:active {
         color: $active;
         background-color: $active;
+
+        svg {
+            fill: $active;
+        }
     }
      
     &::after {
@@ -58,12 +64,6 @@
         z-index: -1;
         display: block;
         transition: all 0.35s;
-    }
-
-    &:hover::after {
-        left: 0;
-        right: 0;
-        transform: skewX(-45deg) scale(1, 1);
     }
 
     &--transparent {
@@ -94,6 +94,16 @@
     
         &:hover {
             box-shadow: 0 0 30px rgba(30,163,235,0.5);  
+        }
+    }
+
+    &--another-arrow {
+        padding: 12px 50px 12px 25px;
+        border-radius: 5px;
+        @extend %poppins-600;
+
+        & svg {
+            top: 20px;
         }
     }
 }
