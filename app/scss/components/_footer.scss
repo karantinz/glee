@@ -8,6 +8,10 @@
         font-size: 14px;
         line-height: 1.7;
         color: #1f2044;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
 
     &__box {
@@ -16,6 +20,10 @@
 
         &:last-child {
             max-width: 270px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 45px;
         }
     }
 
@@ -55,6 +63,10 @@
         padding: 27px 0 39px;
         font-size: 14px;
         color: $grey;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
     
     &__bottom-list {
@@ -79,29 +91,4 @@
         @extend %effect;
     }
 
-}
-
-@media (max-width: 768px) {
-    .footer {
-        &__inner {
-            display: block;
-        }
-
-        &__box {
-            margin-bottom: 45px;
-            width: auto;
-        }
-
-        &__link {
-            padding-right: 0;
-        }
-
-        &__bottom {
-            display: block;
-        }
-
-        &__bottom p {
-            padding-bottom: 10px;
-        }
-    }
 }

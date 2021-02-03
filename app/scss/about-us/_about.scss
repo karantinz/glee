@@ -1,0 +1,114 @@
+.about {
+    margin-bottom: 120px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        margin-right: 43px;
+        max-width: 570px;
+        width: 100%;
+        height: 676px;
+    }
+
+    &__content {
+        padding-top: 97px;
+    }
+
+    &__num {
+        display: flex;
+        align-items: center;
+        font-size: 140px;
+        line-height: 0.2;
+        color: #a3bbc8;
+        @extend %rubikbold-700;
+        margin-bottom: 38px;
+    }
+
+    &__num-text {
+        font-size: 16px;
+        line-height: 1.8;
+        color: $dark-blue;
+        max-width: 90px;
+        padding-left: 26px; 
+        @extend %rubikregular-400;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $dark-blue;
+        margin-bottom: 23px;
+    }
+
+    &__text {
+        max-width: 560px;
+        height: 110px;
+        margin-bottom: 61px;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__bottom {
+        display: flex;
+        padding-top: 34px;
+        border-top: 1px solid #e6eaf0;
+        @extend %dmsansbold-700;
+    }
+
+    &__price {
+        font-size: 36px;
+        line-height: 1.2;
+        color: $dark-blue;
+        padding-left: 53px;
+        margin-right: 50px;    
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+            border-right: none;
+        }
+
+        &::before {
+            content: "";
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 42px;
+            height: 42px;
+            left: 0;
+            top: 11px;
+        }
+
+        & + &::after {
+            content: "";
+            border-right: 1px solid #e6eaf0;
+            position: absolute;
+            height: 80px;
+            top: 0;
+            left: -25px;
+        }
+
+        &--projects::before {
+            content: "";
+            background-image: url("../../images/about-1.svg");
+        }
+
+        &--revenue::before {
+            content: "";
+            background-image: url("../../images/about-2.svg");
+        }
+
+        &--awards::before {
+            content: "";
+            background-image: url("../../images/about-3.svg");
+        }
+    }
+
+    &__price-text {
+        display: block;
+        color: #4c4c4c;
+        font-size: 16px;
+    }
+}

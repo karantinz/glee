@@ -1,12 +1,4 @@
 .news {
-    &__wrapper {
-        height: 359px;
-
-        @media (max-width: 1024px) {
-            height: auto;
-        }
-    }
-
     &__top {
         display: flex;
         justify-content: space-between;
@@ -45,23 +37,6 @@
         @media (max-width: 1024px) {
             flex-wrap: wrap;
             justify-content: center;
-        }
-    }
-
-    &__box {
-        margin-right: 30px;
-        width: 370px;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @media (max-width: 1024px) {
-            margin-bottom: 50px;
         }
     }
 
@@ -105,7 +80,7 @@
         @extend %dmsansmedium-500;
         color: #262626;
         padding: 29px 54px 0 33px;
-        display: -webkit-box;
+        display: -webkit-box;           // появление точек в конце
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
@@ -142,3 +117,19 @@
     }
 }
 
+.news-article {
+    margin-right: 30px;
+    width: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 1024px) {
+        margin-bottom: 50px;
+    }
+}

@@ -1,5 +1,6 @@
 .partners {
     padding: 255px 0 88px;
+    margin-top: -172px;
     margin-bottom: 81px;
     background-color: $pale-pink;
 
@@ -18,5 +19,6 @@
 
     @media (max-width: 1024px) {
         padding-top: 100px;
+        margin-top: 0;
     }
 }

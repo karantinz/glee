@@ -1,0 +1,66 @@
+.about-services {
+    background-color: $dark-pink;
+    height: 320px;
+    @extend %dmsansbold-700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+
+    &__inner {
+        display: flex;
+        text-align: center;
+        font-size: 36px;
+        color: $dark-blue;
+    }
+
+    &__box {
+        margin-right: 120px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        position: relative;
+        padding-top: 75px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            top: 13px;
+            width: 83px;
+            height: 67px;
+        }
+
+        &--satisfied::before {
+            content: "";
+            background-image: url("../../images/about-services-1.png");
+        }
+
+        &--delivered::before {
+            content: "";
+            background-image: url("../../images/about-services-2.png");
+            top: 19px;
+            left: 46px;
+        }
+
+        &--time::before {
+            content: "";
+            background-image: url("../../images/about-services-3.png");
+            left: 46px;
+        }
+
+        &--store::before {
+            content: "";
+            background-image: url("../../images/about-services-4.png");
+            left: 35px;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-size: 18px;
+    }
+}

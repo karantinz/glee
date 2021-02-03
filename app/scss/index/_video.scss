@@ -6,6 +6,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &__play {
+        background-color: $blue;
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        transition: background-color 0.3s;
+        outline: transparent;
+        box-shadow: 0px 0px 0px 14px rgba(163, 187, 200, 0.5);
+    }
     
     svg {
         fill: #fff;
@@ -22,19 +36,5 @@
 
     &:active .video__play {
         background-color: $active;
-    }
-
-    &__play {
-        background-color: $blue;
-        border-radius: 50%;
-        width: 98px;
-        height: 98px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-        transition: background-color 0.3s;
-        outline: transparent;
-        box-shadow: 0px 0px 0px 14px rgba(163, 187, 200, 0.5);
     }
 }
