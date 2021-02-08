@@ -1,5 +1,5 @@
 $(function(){
-    $('.slider__inner').slick({
+    $('.slider-top__inner').slick({
         arrows: false,
         dots: true,
     });
@@ -45,14 +45,14 @@ $(function(){
     });
 
 
-    var mixer1 = mixitup('.product__inner', {
+    var mixer1 = mixitup('.products__inner', {
         selectors: {
-            control: '.product .goods__btn'
+            control: '.products .goods-filter__btn'
         },
     });
     var mixer2 = mixitup('.design__inner', {
         selectors: {
-            control: '.design .goods__btn'
+            control: '.design .goods-filter__btn'
         },
     });
 })

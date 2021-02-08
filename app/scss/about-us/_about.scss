@@ -3,6 +3,10 @@
 
     &__inner {
         display: flex;
+
+        @media (max-width: 1200px) {
+            display: block;
+        }
     }
 
     &__img {
@@ -10,10 +14,15 @@
         max-width: 570px;
         width: 100%;
         height: 676px;
+        object-fit: cover;
+
+        @media (max-width: 1200px) {
+            max-width: none;
+        }
     }
 
     &__content {
-        padding-top: 97px;
+        padding-top: 93px;
     }
 
     &__num {
@@ -24,6 +33,11 @@
         color: #a3bbc8;
         @extend %rubikbold-700;
         margin-bottom: 38px;
+
+        @media (max-width: 1200px) {
+            justify-content: center;
+            margin-bottom: 45px;
+        }
     }
 
     &__num-text {
@@ -37,6 +51,8 @@
 
     &__title {
         font-size: 36px;
+        max-width: 550px;
+        overflow: hidden;
         color: $dark-blue;
         margin-bottom: 23px;
     }
@@ -44,11 +60,12 @@
     &__text {
         max-width: 560px;
         height: 110px;
-        margin-bottom: 61px;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
         overflow: hidden;
+        margin-bottom: 72px;
+
+        @media (max-width: 1200px) {
+            max-width: none;
+        }
     }
 
     &__bottom {
@@ -56,6 +73,16 @@
         padding-top: 34px;
         border-top: 1px solid #e6eaf0;
         @extend %dmsansbold-700;
+
+        @media (max-width: 1200px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 736px) {
+            display: block;
+            border-bottom: 1px solid #e6eaf0;
+            padding-bottom: 34px;
+        }
     }
 
     &__price {
@@ -88,6 +115,10 @@
             height: 80px;
             top: 0;
             left: -25px;
+
+            @media (max-width: 736px) {
+                content: "";
+            }
         }
 
         &--projects::before {
@@ -103,6 +134,10 @@
         &--awards::before {
             content: "";
             background-image: url("../../images/about-3.svg");
+        }
+
+        @media (max-width: 736px) {
+            margin-bottom: 25px;
         }
     }
 

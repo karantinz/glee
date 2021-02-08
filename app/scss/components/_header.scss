@@ -10,6 +10,10 @@
 
 .logo {
     margin-right: 159px;
+
+    @media (max-width: 1200px) {
+        margin-right: 0;
+    }
 }
 
 .menu {
@@ -95,7 +99,7 @@
             z-index: 2;
             right: 25px;
 
-            & span, 
+            span, 
             &::before,
             &::after {
                 position: absolute;
@@ -162,12 +166,6 @@
             background-color: $active;
         }
 
-        &--search {
-            margin-right: 22px;
-            background-color: #edf1f4;
-            fill: $dark-blue;
-        }
-    
         &--menu {
             background-color: $blue;
             fill: #fff;
@@ -197,21 +195,53 @@
         fill: $dark-blue;
         outline: transparent;
         position: relative;
+        z-index: 1;
+        transition: background-color 0.5s, color 0.5s;
+        overflow: hidden;
 
         &--heart {
             padding-left: 39px;
             padding-right: 30px;
             border-radius: 20px 0 0 20px;
-            
-            @extend %header-nav-menu;
         }
     
         &--cart {
             padding-left: 30px;
             padding-right: 39px;
             border-radius: 0 20px 20px 0;
-
-            @extend %header-nav-menu;
+        }
+        
+        &:focus {
+            background-color: $focus;
+        }
+        
+        &:hover {
+            color: $btn-blue;
+        }
+        
+        &:active {
+            color: $active;
+            background-color: $active;
+        }
+                 
+        &::after {
+            left: -20%;
+            right: -20%;
+            top: 0;
+            bottom: 0;
+            transform: skewX(-45deg) scale(0, 1);
+            content: "";
+            background-color: #ecf0f1;
+            position: absolute;
+            z-index: -1;
+            display: block;
+            transition: all 0.35s;
+        }
+        
+        &:hover::after {
+            left: 0;
+            right: 0;
+            transform: skewX(-45deg) scale(1, 1);
         }
     }
 

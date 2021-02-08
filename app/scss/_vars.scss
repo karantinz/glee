@@ -78,45 +78,6 @@ $black: #191919;
     }
 }
 
-%header-nav-menu {
-    z-index: 1;
-    transition: background-color 0.5s, color 0.5s;
-    overflow: hidden;
-    
-    &:focus {
-        background-color: $focus;
-    }
-    
-    &:hover {
-        color: $btn-blue;
-    }
-    
-    &:active {
-        color: $active;
-        background-color: $active;
-    }
-             
-    &::after {
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        content: "";
-        background-color: #ecf0f1;
-        position: absolute;
-        z-index: -1;
-        display: block;
-        transition: all 0.35s;
-    }
-    
-    &:hover::after {
-        left: 0;
-        right: 0;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-}
-
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});

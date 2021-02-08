@@ -1,4 +1,4 @@
-.slider {
+.slider-top {
 
     .slick-dots {
         display: flex;
@@ -42,10 +42,10 @@
                 background-color: rgb(253, 100, 100);
             }
         }
-    
-        .slick-active button {
-            opacity: 1;
-        }
+    }
+
+    .slick-active button {
+        opacity: 1;
     }
 
     &__img {
@@ -55,6 +55,7 @@
         margin: auto;
         margin-top: 90px;
         margin-right: 186px;
+        object-fit: cover;
     }
 
     &__box {
@@ -78,8 +79,11 @@
     &__title {
         text-transform: uppercase;
         max-width: 444px;
+        max-height: 215px;
+        overflow: hidden;
         font-size: 72px;
         line-height: 1;
+        font-weight: 500;
         margin-bottom: 21px;
 
         @media (max-width: 380px) {
@@ -89,6 +93,8 @@
 
     &__text {
         max-width: 350px;
+        max-height: 126px;
+        overflow: hidden;
         font-size: 18px;
         margin-bottom: 30px;
         @extend %rubikregular-400;
