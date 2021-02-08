@@ -1,5 +1,5 @@
 .services {
-    margin-bottom: 53px;
+    margin-bottom: 45px;
 
     &__inner {
         background-color: $pale-pink;
@@ -12,7 +12,7 @@
     }
 
     &__box {
-        width: 33%;
+        width: calc(100% / 3);
         padding: 47px 0 38px;
         display: flex;
 
@@ -23,17 +23,14 @@
         @media (max-width: 1024px) {
             width: auto;
             padding-left: 50px;
-
+            border-bottom: 1px solid #e8e4df;
+            
+            &:last-child {
+                border-bottom: none;
+            }
+            
             & + & {
                 border-left: none;
-            }
-
-            & {
-                border-bottom: 1px solid #e8e4df;
-
-                &:last-child {
-                    border-bottom: none;
-                }
             }
         }
     }
@@ -51,6 +48,7 @@
     }
 
     &__title {
+        max-width: 260px;
         font-size: 18px;
         line-height: 2.2;
         color: #414141;
@@ -94,7 +92,9 @@
 
     &__text {
         @extend %dmsansregular-400;
-        max-width: 300px;
+        max-width: 213px;
+        max-height: 55px;
+        overflow: hidden;
 
         @media (max-width: 1024px) {
             max-width: none;

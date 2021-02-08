@@ -13,6 +13,7 @@
 
     &__link {
         padding-right: 37px;
+        margin-right: -12px;
         position: relative;
         color: #000;
         transition: color 0.3s;
@@ -33,11 +34,26 @@
 
     &__inner {
         display: flex;
+        column-gap: 10px;
 
         @media (max-width: 1024px) {
             flex-wrap: wrap;
             justify-content: center;
         }
+    }
+}
+
+.news-card {
+    margin: 0 auto;
+    width: 370px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+    @media (max-width: 1024px) {
+        margin-bottom: 50px;
     }
 
     &__img {
@@ -45,6 +61,12 @@
         height: 250px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        object-fit: cover;
+        transition: box-shadow 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 5px 10px rgba(#000, 0.1);
+        }
     }
 
     &__btn {
@@ -73,21 +95,21 @@
 
     &__text {
         max-width: 369px;
-        height: 92px;
+        max-height: 92px;
         margin-bottom: 22px;
         font-size: 18px;
         line-height: 1.2;
         @extend %dmsansmedium-500;
         color: #262626;
         padding: 29px 54px 0 33px;
-        display: -webkit-box;           // появление точек в конце
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
         overflow: hidden;
-    }
 
+        @extend %effect;
+    }
+      
     &__footer {
         margin: 0 30px;
+        margin-top: auto;
         padding-top: 13px;
         padding-bottom: 23px; 
         font-size: 12px;
@@ -98,7 +120,6 @@
     }
     
     &__time {
-        margin-top: auto;
         margin-left: 16px;
         margin-right: 36px;
 
@@ -114,22 +135,9 @@
         @extend %rubikregular-400;
         
         @extend %effect;
-    }
-}
 
-.news-article {
-    margin-right: 30px;
-    width: 370px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
-    &:last-child {
-        margin-right: 0;
-    }
-
-    @media (max-width: 1024px) {
-        margin-bottom: 50px;
+        @media (max-width: 1024px) {
+            padding: 15px 0;
+        }
     }
 }

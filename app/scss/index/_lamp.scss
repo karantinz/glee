@@ -1,34 +1,15 @@
 .lamp {
-    margin-top: 170px;
+    display: flex;
+    width: 100%;
+    min-height: 390px;
+    background-color: #feefe2;
+    position: relative;
+    margin-right: 30px;
 
-    &__inner {
-        display: flex;
-
-        @media (max-width: 1024px) {
-            display: block;
-        }
+    &:last-child {
+        margin-right: 0;
     }
-
-    &__box {
-        display: flex;
-        width: 100%;
-        min-height: 390px;
-        background-color: #feefe2;
-        position: relative;
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        @media (max-width: 1024px) {
-            margin-bottom: 40px;
-            padding-left: 25px;
-            padding-bottom: 30px;
-            display: block;
-        }
-    }
-
+    
     &__item {
         position: absolute;
         right: 0;
@@ -46,6 +27,7 @@
 
     &__img {
         position: absolute;
+        object-fit: cover;
         right: 56%;
         bottom: 82px;
         width: 100%;
@@ -61,6 +43,8 @@
 
     &__title {
         max-width: 260px;
+        max-height: 61px;
+        overflow: hidden;
         font-size: 26px;
         line-height: 1.2;
         margin-bottom: 14px;
@@ -69,10 +53,7 @@
 
     &__text {
         max-width: 445px;
-        height: 19%;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        max-height: 80px;
         overflow: hidden;
         padding-right: 25px;
         margin-bottom: 30px;
@@ -80,7 +61,9 @@
     }
 
     @media (max-width: 1024px) {
-        margin-top: 50px;
+        margin-bottom: 40px;
+        padding-left: 25px;
+        padding-bottom: 30px;
+        display: block;
     }
 }
-

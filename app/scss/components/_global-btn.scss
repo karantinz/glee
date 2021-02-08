@@ -88,10 +88,6 @@
         cursor: pointer;
         transition: box-shadow 0.3s, background-color 0.3s;
 
-        &:focus {
-            background-color: $focus;
-        }
-    
         &:hover {
             box-shadow: 0 0 30px rgba(30,163,235,0.5);  
         }
