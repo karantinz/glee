@@ -93,6 +93,17 @@
         }
     }
 
+    &--min-small {
+        padding: 8px 25px;
+        fill: #285886;
+        border-radius: 0 5px 5px 0;
+
+        svg {
+            top: 14px;
+            right: 18px;
+        }
+    }
+
     &--another-arrow {
         padding: 12px 50px 12px 25px;
         border-radius: 5px;
@@ -100,6 +111,57 @@
 
         & svg {
             top: 20px;
+        }
+    }
+
+    &--big {
+        padding: 12px 58px;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    &--leave {
+        padding: 13px 42px 13px 35px;
+        text-transform: uppercase;
+    }
+
+    &--contact {
+        padding: 13px 42px 13px 35px;
+        text-transform: uppercase;
+        border-radius: 10px;
+    }
+
+    &--details {
+        padding: 13px 60px 13px 58px;
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+
+    &--login {
+        padding: 15px 216px;
+        margin-bottom: 28px;
+        color: #fff;
+        background-color: #a3bbc8;
+
+        @media (max-width: 540px) {
+            margin: auto;
+            padding: 15px 107px;
+        }
+    }
+
+    &--login-trasparent {
+        padding: 15px 169px;
+        color: $dark-blue;
+        background-color: transparent;
+        border: 1px solid #a3bbc8;
+
+        &:hover {
+            background-color: #a3bbc8;
+        }
+
+        @media (max-width: 540px) {
+            margin: auto;
+            padding: 15px 62px;
         }
     }
 }

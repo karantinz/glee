@@ -21,10 +21,8 @@
     &__link {
         color: #222933;
         @extend %effect;
-    }
 
-    &__text {
-        &::before {
+        &::after {
             content: "/";
             padding: 0 7px;
         }

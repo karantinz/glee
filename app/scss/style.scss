@@ -12,6 +12,10 @@
 @import 'components/footer';
 @import 'components/global-btn';
 @import 'components/subscribe-form';
+@import 'components/filter-category';
+@import 'components/rangeSlider';
+@import 'components/blog';
+@import 'components/tabs';
 
 @import 'index/slider-top';
 @import 'index/services';
@@ -23,10 +27,22 @@
 @import 'about-us/about-services';
 @import 'about-us/team';
 
+@import 'product-list/catalog';
+@import 'product-list/numbers';
 
+@import 'blog/section-blog';
 
+@import 'blog details/blog-details';
 
+@import 'product-details/product-details';
+@import 'product-details/product-description';
+@import 'product-details/product-related';
 
+@import 'contact/contact';
+
+@import 'login/login';
+
+@import 'terms-conditions/terms-conditions';
 
 
 

@@ -1,0 +1,131 @@
+.contact {
+    &__top {
+        text-align: center;
+        margin-bottom: 62px;
+    }
+
+    &__top-span {
+        @extend %poppins-700;
+        color: #a3bbc8;
+        margin-bottom: 20px;
+    }
+
+    &__top-title {
+        @extend %dmsansbold-700;
+        font-size: 35px;
+        color: #436372;
+    }
+
+    &__inner {
+        display: flex;
+        margin-bottom: 120px;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__box {
+        max-width: 373px;
+        width: 100%;
+        max-height: 385px;
+        text-align: center;
+        margin-right: 29px;
+        padding: 69px 55px 79px;
+        background-color: #fbfbfb;
+        border: 1px solid #fff;
+        transition: border 0.3s, background-color 0.3s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:first-child {
+            svg {
+                padding-left: 23px;
+            }
+        }
+
+        svg {
+            width: 78px;
+            height: 81px;
+            display: flex;
+            margin: auto;
+            margin-bottom: 65px;
+            padding-top: 20px;
+            padding-left: 20px;
+            border-radius: 17px;
+            fill: #a3bbc8;
+            background-color: #fff;
+            transition: fill 0.3s;
+        }
+
+        &:hover {
+            border: 1px solid #a3bbc8;
+
+            svg {
+                background-color: #565872;
+                fill: #fff;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            margin: 0 auto 45px;
+
+            &:last-child {
+                margin: 0 auto 45px;
+            }
+        }
+    }
+
+    &__title {
+        @extend %dmsansbold-700;
+        font-size: 20px;
+        color: #222222;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        display: block;
+        font-weight: 400;
+        color: #565872;       
+
+        &:first-of-type {
+            max-width: 215px;
+            padding-left: 43px;
+
+            @media (max-width: 1024px) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__link {
+        color: #565872;  
+        @extend %effect;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__wrapper-contact {
+        margin-right: 10px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__img {
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}

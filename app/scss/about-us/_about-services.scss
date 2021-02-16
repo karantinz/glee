@@ -53,25 +53,25 @@
 
         &--satisfied::before {
             content: "";
-            background-image: url("../../images/about-services-1.png");
+            background-image: url("../images/about-services-1.png");
         }
 
         &--delivered::before {
             content: "";
-            background-image: url("../../images/about-services-2.png");
+            background-image: url("../images/about-services-2.png");
             top: 19px;
             left: 46px;
         }
 
         &--time::before {
             content: "";
-            background-image: url("../../images/about-services-3.png");
+            background-image: url("../images/about-services-3.png");
             left: 46px;
         }
 
         &--store::before {
             content: "";
-            background-image: url("../../images/about-services-4.png");
+            background-image: url("../images/about-services-4.png");
             left: 35px;
         }
     }
