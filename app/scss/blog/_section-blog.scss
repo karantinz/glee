@@ -1,0 +1,13 @@
+.section-blog {
+    margin-bottom: 100px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.irs--flat .irs-line {
+    height: 1px;
+    background-color: #c2d2db;
+
+    @media (max-width: 733px) {
+      height: 3px;
+    }
+}
+
+.irs--flat .irs-bar {
+    top: 25px;
+    height: 3px;
+    background-color: #a3bbc8;
+
+    @media (max-width: 733px) {
+       height: 5px;
+    }
+}
+
+.irs--flat .irs-handle>i:first-child {
+    top: -3px;
+    width: 14px;
+    height: 86%;
+    background-color: #a3bbc8;
+
+    @media (max-width: 733px) {
+        top: -18px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+    display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    display: none;
+}

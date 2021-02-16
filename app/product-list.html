@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee | Product</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Services</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Pages +</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">News</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="user-nav">
+                    <a class="product-icon product-icon--menu-nav" href="#">
+                        <span class="sr-only">search link</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.28" height="15.281"
+                            viewBox="0 0 15.28 15.281">
+                            <path
+                                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                                transform="translate(-1544.72 -66)" />
+                        </svg>
+                    </a>
+
+                    <div class="user-nav__box">
+                        <a class="user-nav__item user-nav__item--heart" href="#">
+                            <span class="sr-only">Like link</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                viewBox="0 0 17.87 15.531">
+                                <path
+                                    d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                    transform="translate(-1639.97 -70.719)" />
+                            </svg>
+                            <span class="user-nav__num user-nav__num--heart">0</span>
+                        </a>
+                        <a class="user-nav__item user-nav__item--cart" href="#">
+                            <span class="sr-only">Products link</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                viewBox="0 0 18.94 16.969">
+                                <path
+                                    d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                    transform="translate(-1716 -69)" />
+                            </svg>
+                            <span class="user-nav__num user-nav__num--cart">0</span>
+                        </a>
+                    </div>
+
+                    <a class="user-nav__link user-nav__link--menu" href="#">
+                        <span class="sr-only">link show more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031"
+                            viewBox="0 0 20.03 20.031">
+                            <path
+                                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                                transform="translate(-1811 -63.594)" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="header-bottom">
+            <h1 class="header-bottom__title">
+                Product list 1
+            </h1>
+            <ul class="header-list">
+                <li class="header-list__item">
+                    <a class="header-list__link" href="#">Home</a>
+                </li>
+                <li class="header-list__text">
+                    Product list 1
+                </li>
+            </ul>
+        </div>
+
+        <section class="catalog">
+            <div class="container container--small">
+                <div class="catalog__inner">
+                    <div class="catalog__filter">
+                        <div class="filter-category">
+                            <span class="filter-title">category</span>
+                            <form class="filter__form">
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box">
+                                        <span class="filter__text">Chair</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
+                                            <path
+                                                d="M0.472,9.538 C0.591,9.538 0.710,9.492 0.803,9.398 L5.024,5.133 C5.028,5.128 5.032,5.124 5.037,5.120 C5.077,5.077 5.109,5.028 5.132,4.976 C5.132,4.976 5.132,4.977 5.132,4.975 C5.162,4.907 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.757 5.177,4.756 C5.177,4.684 5.162,4.612 5.133,4.545 C5.133,4.544 5.133,4.544 5.133,4.544 C5.133,4.544 5.133,4.544 5.133,4.543 C5.109,4.490 5.077,4.440 5.035,4.396 C5.032,4.391 5.028,4.387 5.024,4.384 L0.803,0.119 C0.609,-0.075 0.306,-0.067 0.123,0.138 C0.035,0.238 -0.008,0.364 -0.008,0.490 C-0.008,0.626 0.042,0.762 0.141,0.862 L3.998,4.758 L0.141,8.655 C0.042,8.755 -0.008,8.890 -0.008,9.026 C-0.008,9.153 0.035,9.280 0.123,9.379 C0.218,9.485 0.345,9.538 0.472,9.538 Z" />
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box">
+                                        <span class="filter__text">Table</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
+                                            <path
+                                                d="M0.472,9.538 C0.591,9.538 0.710,9.492 0.803,9.398 L5.024,5.133 C5.028,5.128 5.032,5.124 5.037,5.120 C5.077,5.077 5.109,5.028 5.132,4.976 C5.132,4.976 5.132,4.977 5.132,4.975 C5.162,4.907 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.757 5.177,4.756 C5.177,4.684 5.162,4.612 5.133,4.545 C5.133,4.544 5.133,4.544 5.133,4.544 C5.133,4.544 5.133,4.544 5.133,4.543 C5.109,4.490 5.077,4.440 5.035,4.396 C5.032,4.391 5.028,4.387 5.024,4.384 L0.803,0.119 C0.609,-0.075 0.306,-0.067 0.123,0.138 C0.035,0.238 -0.008,0.364 -0.008,0.490 C-0.008,0.626 0.042,0.762 0.141,0.862 L3.998,4.758 L0.141,8.655 C0.042,8.755 -0.008,8.890 -0.008,9.026 C-0.008,9.153 0.035,9.280 0.123,9.379 C0.218,9.485 0.345,9.538 0.472,9.538 Z" />
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box">
+                                        <span class="filter__text">Lamp</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
+                                            <path
+                                                d="M0.472,9.538 C0.591,9.538 0.710,9.492 0.803,9.398 L5.024,5.133 C5.028,5.128 5.032,5.124 5.037,5.120 C5.077,5.077 5.109,5.028 5.132,4.976 C5.132,4.976 5.132,4.977 5.132,4.975 C5.162,4.907 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.757 5.177,4.756 C5.177,4.684 5.162,4.612 5.133,4.545 C5.133,4.544 5.133,4.544 5.133,4.544 C5.133,4.544 5.133,4.544 5.133,4.543 C5.109,4.490 5.077,4.440 5.035,4.396 C5.032,4.391 5.028,4.387 5.024,4.384 L0.803,0.119 C0.609,-0.075 0.306,-0.067 0.123,0.138 C0.035,0.238 -0.008,0.364 -0.008,0.490 C-0.008,0.626 0.042,0.762 0.141,0.862 L3.998,4.758 L0.141,8.655 C0.042,8.755 -0.008,8.890 -0.008,9.026 C-0.008,9.153 0.035,9.280 0.123,9.379 C0.218,9.485 0.345,9.538 0.472,9.538 Z" />
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box">
+                                        <span class="filter__text">Watch</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
+                                            <path
+                                                d="M0.472,9.538 C0.591,9.538 0.710,9.492 0.803,9.398 L5.024,5.133 C5.028,5.128 5.032,5.124 5.037,5.120 C5.077,5.077 5.109,5.028 5.132,4.976 C5.132,4.976 5.132,4.977 5.132,4.975 C5.162,4.907 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.757 5.177,4.756 C5.177,4.684 5.162,4.612 5.133,4.545 C5.133,4.544 5.133,4.544 5.133,4.544 C5.133,4.544 5.133,4.544 5.133,4.543 C5.109,4.490 5.077,4.440 5.035,4.396 C5.032,4.391 5.028,4.387 5.024,4.384 L0.803,0.119 C0.609,-0.075 0.306,-0.067 0.123,0.138 C0.035,0.238 -0.008,0.364 -0.008,0.490 C-0.008,0.626 0.042,0.762 0.141,0.862 L3.998,4.758 L0.141,8.655 C0.042,8.755 -0.008,8.890 -0.008,9.026 C-0.008,9.153 0.035,9.280 0.123,9.379 C0.218,9.485 0.345,9.538 0.472,9.538 Z" />
+                                        </svg>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box">
+                                        <span class="filter__text">Clock</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="6px" height="10px">
+                                            <path
+                                                d="M0.472,9.538 C0.591,9.538 0.710,9.492 0.803,9.398 L5.024,5.133 C5.028,5.128 5.032,5.124 5.037,5.120 C5.077,5.077 5.109,5.028 5.132,4.976 C5.132,4.976 5.132,4.977 5.132,4.975 C5.162,4.907 5.177,4.832 5.177,4.758 C5.177,4.757 5.177,4.757 5.177,4.756 C5.177,4.684 5.162,4.612 5.133,4.545 C5.133,4.544 5.133,4.544 5.133,4.544 C5.133,4.544 5.133,4.544 5.133,4.543 C5.109,4.490 5.077,4.440 5.035,4.396 C5.032,4.391 5.028,4.387 5.024,4.384 L0.803,0.119 C0.609,-0.075 0.306,-0.067 0.123,0.138 C0.035,0.238 -0.008,0.364 -0.008,0.490 C-0.008,0.626 0.042,0.762 0.141,0.862 L3.998,4.758 L0.141,8.655 C0.042,8.755 -0.008,8.890 -0.008,9.026 C-0.008,9.153 0.035,9.280 0.123,9.379 C0.218,9.485 0.345,9.538 0.472,9.538 Z" />
+                                        </svg>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-price">
+                            <span class="filter-title filter-title--price">price</span>
+                            <form class="filter-price__form" action="#">
+                                <input class="filter-price__input" type="text" data-min="0" data-max="1000"
+                                    data-from="200" data-to="500">
+                                <label class="filter-price__label">
+                                    <span>
+                                        $
+                                        <span class="filter-price__text filter-price__from">
+                                            100.00
+                                        </span>
+                                    </span>
+                                    <span>
+                                        $
+                                        <span class="filter-price__text filter-price__to">
+                                            500.00
+                                        </span>
+                                    </span>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-brand">
+                            <span class="filter-title filter-title--brand">brand</span>
+                            <form class="filter">
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box filter__box--justify-content">
+                                        <span class="filter__text">RFL</span>
+                                        <span>(10)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box filter__box--justify-content">
+                                        <span class="filter__text">Brothers</span>
+                                        <span>(21)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box filter__box--justify-content">
+                                        <span class="filter__text">Regal</span>
+                                        <span>(3)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box filter__box--justify-content">
+                                        <span class="filter__text">Nadia</span>
+                                        <span>(14)</span>
+                                    </div>
+                                </label>
+
+                                <label class="filter__label">
+                                    <input class="filter__input" type="checkbox">
+                                    <div class="filter__box filter__box--justify-content">
+                                        <span class="filter__text">Otobi</span>
+                                        <span>(6)</span>
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+
+                        <div class="filter-recent">
+                            <span class="filter-title filter-title--recent">recent products</span>
+                            <a class="filter-recent__link" href="#">
+                                <img class="filter-recent__img" src="images/filter-recent-1.png" alt="product">
+                                <div class="filter-recent__box">
+                                    <span class="filter-recent__text">Pendant lamp</span>
+                                    <span class="filter-recent__star" data-rateyo-rating="4"></span>
+                                    <span class="filter-recent__text">23$</span>
+                                </div>
+                            </a>
+
+                            <a class="filter-recent__link" href="#">
+                                <img class="filter-recent__img" src="images/filter-recent-2.png" alt="product">
+                                <div class="filter-recent__box">
+                                    <span class="filter-recent__text">Pendant lamp</span>
+                                    <span class="filter-recent__star" data-rateyo-rating="4"></span>
+                                    <span class="filter-recent__text">23$</span>
+                                </div>
+                            </a>
+
+                            <a class="filter-recent__link" href="#">
+                                <img class="filter-recent__img" src="images/filter-recent-3.png" alt="product">
+                                <div class="filter-recent__box">
+                                    <span class="filter-recent__text">Pendant lamp</span>
+                                   <span class="filter-recent__star" data-rateyo-rating="4"></span>
+                                    <span class="filter-recent__text">23$</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="products-list">
+                        <article class="product-card mix category-furnitures">
+                            <img class="product-card__img" src="images/wooden-r.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Wooden radio</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-furnitures">
+                            <img class="product-card__img" src="images/wooden-c.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Wooden chair</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-chairs">
+                            <img class="product-card__img" src="images/white-c.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">White chair</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-chairs">
+                            <img class="product-card__img" src="images/retro-t.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-lighting">
+                            <img class="product-card__img" src="images/wooden-r-2.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Wooden radio</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+
+                        <article class="product-card mix category-chairs">
+                            <img class="product-card__img" src="images/retro-t.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-lighting">
+                            <img class="product-card__img" src="images/wooden-c-2.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Wooden chair</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-decor">
+                            <img class="product-card__img" src="images/white-c-2.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">White chair</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+    
+                        <article class="product-card mix category-decor">
+                            <img class="product-card__img" src="images/retro-t-2.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+
+                        <article class="product-card mix category-decor">
+                            <img class="product-card__img" src="images/product-1.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+
+                        <article class="product-card mix category-decor">
+                            <img class="product-card__img" src="images/product-2.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+
+                        <article class="product-card mix category-decor">
+                            <img class="product-card__img" src="images/product-3.png" alt="product">
+                            <div class="product-card__item">
+                                <a class="product-icon" href="#">
+                                    <span class="sr-only">to enlarge</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M759.45,1579.8l-4.588-4.59a8.827,8.827,0,0,1-2.651,2.65l4.588,4.59A1.874,1.874,0,0,0,759.45,1579.8Zm-4.45-9.3a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,755,1570.5Zm-7.5,5.62a5.625,5.625,0,1,1,5.625-5.62A5.628,5.628,0,0,1,747.5,1576.12Zm-4.375-5.62h1.25a3.135,3.135,0,0,1,3.125-3.13v-1.25A4.386,4.386,0,0,0,743.125,1570.5Z"
+                                            transform="translate(-740 -1563)" />
+                                    </svg>
+                                </a>
+    
+                                <button class="product-icon product-icon--cart" type="button">
+                                    <span class="sr-only">cart button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+                                        <path
+                                            d="M800.814,1564.63h2.333l3.323,12.04a0.812,0.812,0,0,0,.787.59h10.214a0.821,0.821,0,0,0,.746-0.48l3.717-8.56a0.836,0.836,0,0,0-.068-0.78,0.813,0.813,0,0,0-.678-0.37H809.9a0.82,0.82,0,0,0,0,1.64H819.94l-3.011,6.92h-9.062l-3.323-12.03a0.808,0.808,0,0,0-.787-0.6h-2.943A0.815,0.815,0,0,0,800.814,1564.63Zm5.67,18.37a1.85,1.85,0,1,0-1.845-1.85A1.85,1.85,0,0,0,806.484,1583Zm11.53,0h0.135A1.907,1.907,0,1,0,818.014,1583Z"
+                                            transform="translate(-800 -1563)" />
+                                    </svg>
+                                </button>
+    
+                                <button class="product-icon" type="button">
+                                    <span class="sr-only">like button</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+                                        <path
+                                            d="M882.99,1569.82a6.208,6.208,0,0,0-1.849-4.1A5.871,5.871,0,0,0,877,1564c-2.311,0-3.948,1.78-4.827,2.74a2.156,2.156,0,0,1-.156.17l-0.083-.09c-0.8-.92-2.476-2.82-4.938-2.82a5.873,5.873,0,0,0-4.139,1.72,6.208,6.208,0,0,0-1.849,4.1,6.845,6.845,0,0,0,1.271,4.34,29.307,29.307,0,0,0,4.763,4.75c1.705,1.41,3.95,3.09,4.965,3.09,1.032,0,3.269-1.68,4.965-3.09a29.234,29.234,0,0,0,4.746-4.75A6.935,6.935,0,0,0,882.99,1569.82Zm-2.376,3.61a27,27,0,0,1-4.431,4.42c-2.406,2-3.831,2.79-4.172,2.82-0.342-.03-1.77-0.83-4.188-2.84a26.78,26.78,0,0,1-4.437-4.4,5.6,5.6,0,0,1-1.054-3.54,4.807,4.807,0,0,1,4.666-4.57c1.863,0,3.216,1.54,3.943,2.37a1.52,1.52,0,0,0,1.059.76,1.731,1.731,0,0,0,1.151-.81c0.794-.87,2.122-2.32,3.851-2.32a4.807,4.807,0,0,1,4.666,4.57A5.528,5.528,0,0,1,880.614,1573.43Z"
+                                            transform="translate(-861 -1564)" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h3 class="product-card__title">Retro table</h3>
+                            <span class="product-card__price">$29.00</span>
+                        </article>
+                    </div>
+                </div>
+
+                <ul class="numbers">
+                    <li class="numbers__item numbers__item--active">
+                        1                
+                    </li>
+                    <li class="numbers__item">
+                        <a class="numbers__link" href="#">2</a>
+                    </li>
+                    <li class="numbers__item">
+                        <a class="numbers__link" href="#">3</a>
+                    </li>
+                    <li class="numbers__item">
+                        <a class="numbers__link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="partners partners--small">
+            <div class="container container--small">
+                <div class="partners__inner">
+                    <div class="partners__item">
+                        <div class="partners__logo" href="#">
+                            <img class="partners__img" src="images/partners-1.png" alt="partners logo">
+                        </div>
+                    </div>
+
+                    <div class="partners__item">
+                        <div class="partners__logo" href="#">
+                            <img class="partners__img" src="images/partners-2.png" alt="partners logo">
+                        </div>
+                    </div>
+
+                    <div class="partners__item">
+                        <div class="partners__logo" href="#">
+                            <img class="partners__img" src="images/partners-3.png" alt="partners logo">
+                        </div>
+                    </div>
+
+                    <div class="partners__item">
+                        <div class="partners__logo" href="#">
+                            <img class="partners__img" src="images/partners-4.png" alt="partners logo">
+                        </div>
+                    </div>
+
+                    <div class="partners__item">
+                        <div class="partners__logo" href="#">
+                            <img class="partners__img" src="images/partners-5.png" alt="partners logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--small">
+            <div class="footer__inner">
+                <div class="footer__wrapper">
+                    <a class="footer__logo" href="#">
+                        <img class="footer__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <address class="footer__address">
+                        <a class="footer__link" href="#">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </a>
+                        <a class="footer__link" href="tel:+8323475843">
+                            Telephone: +832-347-5843
+                        </a>
+                        <a class="footer__link" href="mailto:email@email.com">
+                            Email: contact@Glee.com
+                        </a>
+                    </address>
+                </div>
+
+                <div class="footer__box">
+                    <div class="footer__title">Services</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                About us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Return Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Our Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <div class="footer__title">Account</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Your Account</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Checkout</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Login</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Register</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <div class="footer__title">newsletter</div>
+                    <p class="footer__text">
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+
+                    <form class="subscribe-form">
+                        <label>
+                            <span class="sr-only">enter email to subscribe</span>
+
+                            <input class="subscribe-form__input" type="email" name="email" placeholder="Email address"
+                                required>
+                        </label>
+                        <button class="global-btn global-btn--small" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>©2020 CopyRight Example. All rights reserved.</p>
+
+                <ul class="footer__bottom-list">
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__bottom-item">
+                        <a class="footer__bottom-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

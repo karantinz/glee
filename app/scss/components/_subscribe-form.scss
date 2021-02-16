@@ -27,5 +27,13 @@
         &:active {
             background-color: #51b1ff;
         }
+
+        &--big {
+            max-width: 211px;
+        }
+    }
+
+    &--blog {
+        margin-bottom: 50px;
     }
 }

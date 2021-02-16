@@ -1,0 +1,13 @@
+.tabs__content {
+    display: none; /* по умолчанию прячем все блоки */
+}
+
+.tabs__content.active {
+    display: block; /* по умолчанию показываем нужный блок */
+}
+
+.tabs-active {
+    // убрать 
+    background-color: #a3bbc8 !important;
+    color: #fff !important;
+}
